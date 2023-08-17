@@ -1,0 +1,14 @@
+what is object and its internal representaytion in java script?
+loosely speaking objects in javascript may be defined as an unordered collection
+of related data of primitive or reference types in the form of "key:value"pairs.
+These keys can be variables or functions and are called properties and methods respectively
+in the context of an object.
+you can define a property by assigning it a value.for example 
+lets create an object named mycar and give it properties named make 
+model and year asd follows
+
+
+var mycar = new Object();
+mycar.make ='altroz';
+mycar.model ='tata';
+mycar.year ='2018';  
