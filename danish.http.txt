@@ -1,0 +1,15 @@
+                                                      HTTP1.1 VS HTTP2
+HTTP1.1 Transfer all the request and responses in the plain text message form.
+The second one is head of line blovking in which TCP connection is blocked all other
+request untill the response does not recieve. all the information related to the header 
+file is repeated in every request.for better understanding lets assume the situation when 
+you make a request to the server for the geeksforgeeks.html page & server respond to you as a resource 
+geeksforgeeks html page.
+
+
+HTTP2 works on the binary framing layer instead of taxtual that converts all the messages in binary format.
+It works on fully multiplexed that is one TCP connection is used for multiple requests. HTTP2 uses HPACK 
+which is used to split data from header.It compresses the header. The server sends all the others files like CSS 
+& JS without the request of the client using the PUSH frame.
+
+
