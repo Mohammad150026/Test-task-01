@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+<script>
+// XMLHTTPREQUEST:
+
+// XMLhttprequest object
+// new keyword
+// creating an XHR object 
+//request variable => user defined
+var request=new XMLHttpRequest()
+console.log(request)
+
+// open an connection 
+request.open('get','https://restcountries.com/v3.1/all')
+//sending an connection 
+request.send()
+// event and function
+//onload event=>page load
+request.onload=("page loaded"){ 
+console.log(request.responce)// string=>object 
+var data=JSON.Parse(request.response)
+console.log(data)
+//console.log(data[0].area)
+}
+//request variable =>user defined
+var request = new XMLHttpRequest()
+console.log(request)
+// open an connection 
+request.send()
+ 
+ // event and function 
+ // onload event=> page load 
+ request.onload=function(){ 
+     console.log("page loaded")
+     // console.log (request.response)
+     //console.log(data)
+     // console.log(data[0].area)
+
+     //how to get all areas in console?
+     //for loop 
+     
+     for (var i=0;i<data.lenght;i++)
+     console.log(data[i])
+ }
+
+
+ </script>
+
+    
+
+</body>
+
+</html> 
